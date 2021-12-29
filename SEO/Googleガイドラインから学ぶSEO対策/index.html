@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/css/normalize.css">
+    <link rel="stylesheet" href="styles/dist.css">
+    <title>Digist</title>
+<meta name="generator" content="Hexo 5.4.0"></head>
+<body>
+    <h1 class="text-6xl text-blue-700">Hello World</h1>
+    <header>
+    <nav id="header__nav">
+        <a href="/">
+            <img id="logo" src="images/logo.svg" alt="Digist">
+        </a>
+        <ul id="nav__categories">
+            <h2 id="categories__heading"><label id="categories__heading-close" for="button__checkbox">×&nbsp;&nbsp;</label>カテゴリー</h2>
+            
+                <a class="category-link" href="/SEO">
+                    <li class="category">SEO</li>                        
+                </a>
+            
+        </ul>
+    </nav>
+    <div id="header__blackSheet"></div>
+    <img id="header__firstView-small" src="images/firstViewS.jpg" alt="first view image for mobile">
+    <img id="header__firstView-large" src="images/firstViewL.jpg" alt="first view image for laptop">
+    <input id="button__checkbox" type="checkbox">
+    <label id="header__button-mobile" for="button__checkbox">
+        <span class="button__line"></span>
+        <span class="button__line"></span>
+        <span class="button__line"></span>
+    </label>
+</header>
+<main>
+    <section id="topSection">
+        <h1 id="topSection__heading">&nbsp;&nbsp;新 着</h1>
+    </section>
+</main>
+
+</body>
+<script type="text/javascript">
+
+    if (typeof window !== "undefined") {
+    
+        let width = window.innerWidth
+    
+        if (width < 959) {
+            // for mobile
+            let navigation = document.getElementById('header__nav-laptop');
+            navigation.id = 'header__nav';
+            
+            let nav__heading = document.getElementById('categories__heading-laptop');
+            nav__heading.id = 'categories__heading';
+            
+        } else {
+            // for laptop
+            let navigation = document.getElementById('header__nav');
+            navigation.id = 'header__nav-laptop';
+            
+            let nav__heading = document.getElementById('categories__heading');
+            nav__heading.id = 'categories__heading-laptop'
+        }
+
+    }
+
+</script>
+</html>

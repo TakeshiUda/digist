@@ -1,0 +1,20 @@
+@mixin import {
+    #header__firstView-small {
+        width: 100%;
+    }
+
+    #header__firstView-large {
+        display: none;
+        width: 100%;
+    }
+
+    @media (min-width: 959px) {
+        #header__firstView-small {
+            display: none;
+        }
+
+        #header__firstView-large {
+            display: block;
+        }
+    }
+}

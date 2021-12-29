@@ -1,0 +1,125 @@
+@use '../object/utility/colors' as colors;
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+
+    #logo {
+        width: 40%;
+        max-width: 300px;
+        padding: 1rem;
+    }
+}
+
+.sideBar {
+    display: none;
+}
+
+@media (min-width: 1000px) {
+
+    body {
+        width: calc(100vw - 60px);
+    }
+
+    .sideBar {
+        height: 100%;
+        width: 60px;
+        position: fixed;
+        top: 0;
+        right: 0;
+        background-color: rgb(3, 38, 91);
+        padding-top: 32px;
+        display: flex;
+        justify-content: center;
+    
+        .sideBar__items {
+            padding-left: 0;
+        }
+    
+        .sideBar__items-icon {
+            list-style-type: none;
+            font-size: 28px;
+            padding-top: 30px;
+        }
+
+        .sideBar__items-name {
+            font-size: 10px;
+            color: white;
+            text-align: center;
+        }
+    
+        #arrowTop {
+            position: fixed;
+            bottom: 20px;
+        }
+    
+        .fa-white {
+            color: white;
+        }
+    }
+}
+
+main {
+    overflow-x: hidden;
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+
+    /* Style the list */
+    ul.breadcrumb {
+        padding: 10px 16px;
+        list-style: none;
+    }
+    
+    /* Display list items side by side */
+    ul.breadcrumb li {
+        display: inline;
+        font-size: 16px;
+    }
+    
+    /* Add a slash symbol (/) before/behind each list item */
+    ul.breadcrumb li+li:before {
+        padding: 8px;
+        color: black;
+        content: ' \003E';
+    }
+    
+    /* Add a color to all links inside the list */
+    ul.breadcrumb li a {
+        text-decoration: none;
+    }
+    
+    /* Add a color on mouse-over */
+    ul.breadcrumb li a:hover {
+        color: #01447e;
+        text-decoration: underline;
+    }
+
+    @media (min-width: 519px) {
+        width: 80vw;
+    }
+
+    @media (min-width: 959px) {
+        width: 60vw;
+    }
+
+    article {
+
+        @media (max-width: 519px) {
+         
+            .title {
+                font-size: 28px;
+            }
+        }
+
+        p {
+            line-height: 157%;
+        }
+
+        li {
+            line-height: 157%;
+        }
+    }
+}

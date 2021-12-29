@@ -1,0 +1,29 @@
+@use '../utility/font.scss' as font;
+@use '../utility/colors' as colors;
+@use '../component/header__button-mobile' as header__button-mobile;
+@use '../component/header__nav' as header__nav;
+@use '../component/header__blackSheet' as header__blackSheet;
+@use '../component/header__nav-laptop' as header__nav-laptop;
+@use '../component/header__firstView' as header__firstView;
+
+
+
+@mixin import {
+
+    header {
+
+        @include header__button-mobile.import;
+
+        @include header__nav-laptop.import;
+
+        @include header__nav.import;
+    
+        @include header__blackSheet.import;
+
+        @include header__firstView.import;
+    }
+}
+
+
+
+
