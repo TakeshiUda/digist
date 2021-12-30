@@ -1,13 +1,15 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html class="scroll-smooth" lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/digist/styles/normalize.css">
     <link rel="stylesheet" href="/digist/styles/dist.css">
-    <link rel="stylesheet" href="/digist/styles/github-markdown.css">
-    <link rel=”icon” href="images/favicon.ico">
+    
+        <link rel="stylesheet" href="/digist/styles/github-markdown.css">
+    
+    <link rel="shortcut icon" href="/digist/images/favicon.ico" type="image/x-icon">
     <title>Digist</title>
 <meta name="generator" content="Hexo 6.0.0"></head>
 <body  class="scroll-smooth">
@@ -16,17 +18,17 @@
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline" viewBox="0 0 20 20" fill="rgb(247, 246, 242, 0.9)">
                 <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" />
             </svg>
-            <p class="hidden group-hover:inline pl-3 duration-150 text-secondary">ホーム</p>
+            <p class="hidden group-hover:inline pl-3 text-secondary">ホーム</p>
         </button>
         <button type="button" class="group-hover:pl-3 py-8 pt-1 inline-block align-bottom">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline" fill="none" viewBox="0 0 24 24" stroke="rgb(247, 246, 242, 0.9)">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
             </svg>
-            <p class="hidden group-hover:inline duration-150 text-secondary pl-3">カテゴリー</p>
+            <p class="hidden group-hover:inline text-secondary pl-3">カテゴリー</p>
         </button>
         <ul class="pl-12">
             
-                <li class="hidden group-hover:block duration-150 pl-[3px]"><a class="text-secondary" href="/digist/categories/SEO">SEO</a></li>
+                <li class="hidden group-hover:block pl-[3px]"><a class="text-secondary" href="/digist/categories/SEO">SEO</a></li>
              
         </ul>
         <button type="button" class="group-hover:pl-3 fixed bottom-[80px]" onclick="window.location.href='#'">
@@ -35,36 +37,59 @@
             </svg>
         </button>
     </aside>
-        <div class="lg:w-[calc(100vw-60px)] peer-hover:w-[calc(100vw-150px)] duration-150">
+    <div class="lg:w-[calc(100vw-60px)] peer-hover:w-[calc(100vw-150px)] duration-150">
     <header>
         <a class="w-11/12 md:w-4/5 lg:w-3/5 mx-auto" href="/digist">
             <img class="w-40 m-2" src="/digist/images/logo.svg" alt="Digist">
         </a>
-        <input class="peer hidden" type="checkbox">
-        <div class="hidden peer-checked:block w-full h-full bg-slate-500 opacity-50 fixed top-0 left-0 z-30"></div>
-        <label role="button" for="checkbox__bottom-drawer" class="w-[50px] h-[50px] bg-accent rounded-full opacity-90 fixed bottom-[30px] right-[30px] z-20 lg:hidden">
-            
-                <span class="block bg-white w-[30px] h-[3px] rounded-md bg- my-[6px] relative top-[8px] left-[10px] z-30"></span>
-            
-                <span class="block bg-white w-[30px] h-[3px] rounded-md bg- my-[6px] relative top-[8px] left-[10px] z-30"></span>
-            
-                <span class="block bg-white w-[30px] h-[3px] rounded-md bg- my-[6px] relative top-[8px] left-[10px] z-30"></span>
-            
+        <input id="checkbox__bottom-drawer" class="peer hidden" type="checkbox">
+<div class="hidden peer-checked:block w-full h-full bg-slate-500 opacity-50 fixed top-0 left-0 z-30"></div>
+<label role="button" for="checkbox__bottom-drawer" class="w-[50px] h-[50px] bg-accent rounded-full opacity-90 fixed bottom-[30px] right-[30px] z-20 lg:hidden">
+    
+        <span class="block bg-white w-[30px] h-[3px] rounded-md bg- my-[6px] relative top-[8px] left-[10px] z-30"></span>
+    
+        <span class="block bg-white w-[30px] h-[3px] rounded-md bg- my-[6px] relative top-[8px] left-[10px] z-30"></span>
+    
+        <span class="block bg-white w-[30px] h-[3px] rounded-md bg- my-[6px] relative top-[8px] left-[10px] z-30"></span>
+    
+</label>
+<nav class="w-[100vw] h-[50vh] mx-auto shadow-inner bg-white z-40 fixed bottom-[-50vh] peer-checked:bottom-0 duration-150">
+    <ul>
+        <label for="checkbox__bottom-drawer">
+            <h2 class="ml-5 mt-5 mb-5 text-black opacity-80 text-xl">×&nbsp;&nbsp;カテゴリー</h2>
         </label>
-        <nav class="w-[100vw] h-[50vh] mx-auto shadow-inner bg-white z-40 fixed bottom-[-50vh] peer-checked:bottom-0 duration-150">
-            <ul>
-                <label for="checkbox__bottom-drawer">
-                    <h2 class="ml-5 mt-5 mb-5 text-black opacity-80 text-xl">×&nbsp;&nbsp;カテゴリー</h2>
-                </label>
-                
-                    <a class="no-underline leading-10 font-bold text-xl" href="/digist/categories/SEO">
-                        <li class="ml-12 text-black opacity-80">SEO</li>                        
-                    </a>
-                
-            </ul>
-        </nav>
+        
+            <a class="no-underline text-black leading-10 font-bold text-xl" href="/digist/categories/SEO">
+                <li class="ml-12 opacity-80">SEO</li>                        
+            </a>
+        
+    </ul>
+</nav>
     </header>
     <main class="w-11/12 md:w-4/5 lg:w-3/5 mx-auto text-[14px] leading-7">
+        <section class="flex flex-row" aria-label="Breadcrumb">
+            <ol class="flex flex-row space-x-1 md:space-x-3">
+              <li class="flex flex-row">
+                  <a href="/digist" class="text-sm text-gray-700 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">
+                      Home
+                  </a>
+              </li>
+              <li>
+                <div class="flex items-center">
+                  <svg class="w-6 h-6 text-gray-400" fill="rgb(45, 66, 99)" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
+                  <a href="/digist/categories/" class="ml-1 text-sm font-medium text-gray-700 hover:text-gray-900 md:ml-2 dark:text-gray-400 dark:hover:text-white"></a>
+                </div>
+              </li>
+              <li aria-current="page">
+                <div class="flex items-center">
+                  <svg class="w-6 h-6 text-gray-400" fill="rgb(45, 66, 99)" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
+                  <span class="ml-1 text-sm font-medium text-gray-400 md:ml-2 dark:text-gray-500"></span>
+                </div>
+              </li>
+            </ol>
+        </section>
+        <p class="inline text-gray-200">作成日：<time datetime="2021-12-29" itemprop="datepublished">2021-12-29</time></p>
+        <p class="inline text-gray-200">&nbsp;&nbsp;&nbsp;更新日：<time datetime="2021-12-29" itemprop="datemodified">2021-12-29</time></p>
         <article class="markdown-body">
             <h1 id="Hello-World"><a href="#Hello-World" class="headerlink" title="Hello World"></a>Hello World</h1><p>This is a test article.</p>
 
